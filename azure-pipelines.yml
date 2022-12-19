@@ -1,11 +1,4 @@
 # Starter pipeline
-- task: CloudFormationCreateOrUpdateStack@1
-  inputs:
-    awsCredentials: 'clf-deployment'
-    regionName: 'us-east-1'
-    stackName: 'create-kms-key'
-    templateSource: 'url'
-    templateUrl: 'https://github.com/Munisekhar371/aws-clf-test/blob/c61a4cd6907a1ff8cf0cf1b9795f738f8bf81d54/secret-creation-template.yml'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -24,3 +17,11 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+  
+  - task: CloudFormationCreateOrUpdateStack@1
+  inputs:
+    awsCredentials: 'clf-deployment'
+    regionName: 'us-east-1'
+    stackName: 'create-kms-key'
+    templateSource: 'url'
+    templateUrl: 'https://github.com/Munisekhar371/aws-clf-test/blob/c61a4cd6907a1ff8cf0cf1b9795f738f8bf81d54/secret-creation-template.yml'
