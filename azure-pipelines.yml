@@ -1,7 +1,0 @@
-task: CloudFormationCreateOrUpdateStack@1
-  inputs:
-    awsCredentials: clf-deployment
-    regionName: us-east-1
-    stackName: create-kms
-    templateSource: url
-    templateUrl: https://github.com/Munisekhar371/aws-clf-test/blob/5c5d2ce10abb207fdd674162a2c8c0cf5a60d439/secret-creation-template.yml
