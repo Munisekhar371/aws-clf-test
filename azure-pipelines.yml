@@ -1,4 +1,4 @@
-- task: CloudFormationCreateOrUpdateStack@1
+task: CloudFormationCreateOrUpdateStack@1
   inputs:
     awsCredentials: clf-deployment
     regionName: us-east-1
