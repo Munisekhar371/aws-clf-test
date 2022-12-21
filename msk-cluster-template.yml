@@ -117,7 +117,7 @@ Resources:
         Sasl:
          Scram: 
            Enabled: true
-      ClusterName: EIB-DEV12-MSK-CLUSTER
+      ClusterName: EIB-DEV1-MSK-CLUSTER
       EncryptionInfo:
         EncryptionAtRest:
             DataVolumeKMSKeyId: !Ref MSKKMSKey
